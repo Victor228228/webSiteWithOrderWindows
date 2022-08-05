@@ -12,6 +12,18 @@ body {
   font-style: normal;
   color: #000000;
 }
+.faded {
+  animation-name: faded;
+  animation-duration: 1.5s;
+}
+@keyframes faded {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .status {
   display: block;
@@ -701,7 +713,7 @@ textarea:focus {
 }
 .numbers1 {
   display: block;
-  float: left;  
+  float: left;
   color: white;
   font-size: 40px;
   margin-right: 10px;
@@ -837,6 +849,16 @@ textarea:focus {
   width: 100%;
   height: 100%;
   z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup_img {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
